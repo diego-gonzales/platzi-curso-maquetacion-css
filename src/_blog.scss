@@ -1,0 +1,82 @@
+.section-image {
+  padding: $padding-general;
+  img {
+    width: 100%;
+  }
+}
+
+.section-info {
+  padding: $padding-general;
+  margin-bottom: 40px;
+  h3 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $color-primary;
+  }
+}
+
+.news-detail {
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.section-contact {
+  padding: 20px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "contact_email"
+    "contact_heart";
+  gap: 10px;
+  background-color:#dfe3e9;
+  text-align: center;
+
+  .image-contact {
+    width: 100px;
+  }
+}
+
+.contact-email {
+  grid-area: contact_email;
+}
+
+.contact-heart {
+  grid-area: contact_heart;
+}
+
+.contact-description {
+  margin: 5px;
+  a {
+    border-bottom: solid 1px;
+  }
+  p {
+    margin-top: 5px;
+  }
+}
+
+// Media Queries
+@media (min-width: 1024px) {
+  .section-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "contact_email contact_heart";
+    gap: 20px;
+    text-align: left;
+
+    .contact-email {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-heart {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.about-main-info {
+  background-color: #dfe3e9;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  img {
+    @include img_beautiful();
+  }
+}
+
+.greetings {
+  margin: 10px 0;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.about-main-projects {
+  padding: $padding-general;
+  margin-bottom: 40px;
+  h3 {
+    text-align: center;
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.projects-main-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.project-container {
+  margin: 10px 0;
+  h4 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+// Media Queries
+@media (min-width: 600px) {
+  .projects-main-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-main-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+}

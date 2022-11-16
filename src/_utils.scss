@@ -1,0 +1,17 @@
+@mixin b_readmore {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: solid 1px $color-primary;
+}
+
+@mixin img_beautiful {
+  width: 100%;
+  border-radius: 7px;
+}
+
+// @function f_padding() {
+//   @return ...;
+// }
