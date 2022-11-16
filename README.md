@@ -1,2 +1,2 @@
 ## Proyecto sobre Maquetación con CSS (Uso de SASS)
-Este es un proyecto parte del curso sobre maquetación de Platzi, aquí hago uso de SCSS a parte de lo que se muestra en el curso
+Este es un proyecto parte del curso sobre maquetación de Platzi, aquí hago uso de SCSS a parte de lo que se muestra en el curso. Se empezó proyecto usando el enfoque Mobile First, dando como resultado un proyecto responsive.
